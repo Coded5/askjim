@@ -33,8 +33,8 @@ model = load_model()
 index = load_index()
 df = load_data()
 
-st.set_page_config(page_title="AskJim: Your Research Assistant", layout="wide")
-st.title("🤖 AskJim: Your Research Assistant")
+st.set_page_config(page_title="AskJim", layout="wide")
+st.title("AskJim: The All-knowing")
 
 user_query = st.text_input("Enter your research question or topic:", "")
 ask = st.button("Ask Jim")
