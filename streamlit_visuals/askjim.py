@@ -39,7 +39,7 @@ st.title("AskJim: The All-knowing")
 st.markdown(
     """
     <div style="text-align: center;">
-        <img src="https://raw.githubusercontent.com/Coded5/askjim/47f4a33f9f8b54b1d60af167e2117ca2ac268930/images/jim.webp" alt="Jim" width="300">
+        <img src="https://raw.githubusercontent.com/Coded5/askjim/47f4a33f9f8b54b1d60af167e2117ca2ac268930/images/jim.webp" alt="Jim">
     </div>
     """,
     unsafe_allow_html=True
