@@ -66,4 +66,4 @@ for index, row in df[missing].iterrows():
     time.sleep(DELAY)
 
 
-df.to_csv("../data/processed_data/scopus_data_doi_1.csv")
+df.to_csv("../data/processed_data/scopus_data_doi.csv")
