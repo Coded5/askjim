@@ -33,8 +33,17 @@ model = load_model()
 index = load_index()
 df = load_data()
 
-st.set_page_config(page_title="AskJim", layout="wide")
+st.set_page_config(page_title="AskJim: The All-knowing", layout="wide")
 st.title("AskJim: The All-knowing")
+
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <img src="https://raw.githubusercontent.com/Coded5/askjim/47f4a33f9f8b54b1d60af167e2117ca2ac268930/images/jim.webp" alt="Jim" width="300">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 user_query = st.text_input("Enter your research question or topic:", "")
 ask = st.button("Ask Jim")
@@ -64,8 +73,6 @@ if ask and user_query:
         st.subheader("Sources")
         for i, source in enumerate(sources):
             st.markdown(f"**Source {i+1}: {source['title']}**")
-            # st.markdown(f"- DOI: {source['DOI']}")
-            #DOI link
             st.markdown(f"- https://doi.org/{source['DOI']}")
 
             st.markdown(f"- Abstract: {source['abstract']}")
