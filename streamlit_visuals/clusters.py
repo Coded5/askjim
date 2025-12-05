@@ -29,8 +29,5 @@ fig.update_layout(
     xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
     yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)
 )
-
-st.set_page_config(page_title="Clustered Map of Science", layout="wide")
-st.title("🗺️ The Clustered Map of Engineering Science")
+st.title("Topic Clusters of Research Papers")
 st.plotly_chart(fig, use_container_width=True)
-
